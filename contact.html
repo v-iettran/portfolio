@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's talk!</title>
+    <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href = "index.html" title= "this link leads to my works">VIET TRAN</a>
+        </div>
+        <div class="nav-bar">
+            <!-- One button link to myworks page -->
+            <button onclick = "window.location.href = 'myworks.html'">My works!</button>
+            <!-- One button to link to contact page -->
+            <button onclick="window.location.href = 'contact.html'">Let's talk!</button>
+        </div>
+    </header>
+    <!-- Above is the header -->
+    <main>
+        <div id = "contact">
+
+            <form class = "contact-form">
+                <h1 id = "talk-panel">Let's talk!</h1>
+                <p>
+                    <label for = "yourname">Your name:</label>
+                    <input type = "text" id = "yourname" name = "yourname" placeholder="Your full name" required>
+                </p>
+                <p>
+                    <label for = "title">Your title:</label>
+                        <label class = "choice" for = "Mr."><input type="radio" id = "Mr." name = "title" value = "Mr."> Mr.</label>
+                        <label class = "choice" for = "Mrs."><input type="radio" id = "Mrs." name = "title" value = "Mrs.">Mrs.</label>      
+                        <label  class = "choice" for = "Miss"><input type="radio" id = "Miss" name = "title" value = "Miss"> Miss</label>                   
+                        <label class = "choice" for = "Dr."><input type="radio" id = "Dr." name = "title" value = "Dr."> Dr.</label>
+                </p>
+                <p>
+                    <label for = "phone">Your phone number:</label>
+                    <input type = "tel" id = "phone" name = "phone" required>    
+                </p>
+                <p>
+                    <label for = "email">Your email:</label>
+                    <input type = "email" id = "email" name = "email" required>    
+                </p>
+                <p>
+                    <label for = "note">What do you want to discuss:</label>
+                    <input type = "text" id = "note" name = "note">    
+                </p>
+                <div class="center"><input type = "submit" class = "submit-button"></div>
+            </form>
+        </div>
+    </main>
+    <!-- Below is the footer -->
+    <div class="footer-container">
+        <footer>
+            <div class = "footer-heading footer-1">
+                <h2>My projects</h2>
+                <a href="#">Photography</a>
+                <a href="#">Video Essay</a>
+                <a href="#">Projects</a>
+            </div>
+            <div class = "footer-heading footer-2">
+                <h2>Get In Touch</h2>
+                <a href="#">Contact</a>
+                <a href="#">Support</a>
+                <a href="#">Anything else</a>
+            </div>
+            <div class = "footer-heading footer-3">
+                <h2>Social Media</h2>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+    
+        </footer>
+    </div>
+</body>
+</html>
