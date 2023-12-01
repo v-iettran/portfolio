@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href = "index.html" title= "this link leads to my works">VIET TRAN</a>
+        </div>
+        <div class="nav-bar">
+            <!-- One button link to myworks page -->
+            <button onclick = "window.location.href = 'myworks.html'">My works!</button>
+            <!-- One button to link to contact page -->
+            <button onclick="window.location.href = 'contact.html'">Let's talk!</button>
+        </div>
+    </header>
+    <!-- Above is the header -->
+    <!-- Below is the main section -->
+    <main>
+        <audio controls style="background-color: red;">
+            <source src="video/Nhac-Chuong-Thay-Chua-Ngot.mp3" type="audio/ogg">
+            Your browser does not support the audio tag.
+        </audio>
+        <div class="navbar-aboutme">
+            <h1>About me</h1>
+            <div class="button-container">
+                <button class = "nav-button-in-aboutme" onclick="window.location.href = '#education'">
+                    Education
+                </button>
+                <button class = "nav-button-in-aboutme" onclick="window.location.href = '#experience'">
+                    Experience
+                </button>
+            </div>
+        </div>
+        
+        <div class= "body-div" id="education">
+            
+            <h2 class = "intro-title">Education</h2>
+            <div class="university-info">
+                <div class="university">
+                    <div class="duke">
+                        <img src="image/dukelogo.png" height = "100">
+                    </div>
+                    <div class="duke">
+                        <p class = "degree">B.A. in Interdisciplinary Studies</p>
+                        <p>(Subplans: Computation and Design; Digital Media)</p>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="dku">
+                        <img src="image/dkulogo.png" height = "100">
+                    </div>
+                    <div class="dku">
+                        <p class = "degree">B.A. in Computation and Design</p>
+                        <p>(Digital Media Track)</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class= "body-div" id="experience">
+            <h2 class="intro-title">Experience</h2>
+            <p class = "job">Vandy English Language Academy</p>
+            <div class="job-positions">
+                <div class="position">
+                    <div class="job-title">
+                        <p>Head of Marketing</p>
+                        <p class = "job-date">June 2021 - May 2022</p>
+                    </div>
+                    <div class="job-description">
+                        <ul class = "job-description-list">
+                            <li>Coordinated the team of 10 members to recruit 200+ new students for VELA each month</li>
+                            <li>Analyzed customer insight monthly to navigate new marketing campaign</li>
+                            <li>Ideated contents for 20+ posts on VELA fanpage</li>
+                            <li>Co-managed 3 marketing campaigns</li>
+                            <li>Wrote 15 posts on VELA fanpage gaining 2000+ reaches and 100 reactions averagely</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="position">
+                    <div class="job-title">
+                        <p>Student Counselor</p>
+                        <p class = "job-date">June 2021 - May 2022</p>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Guided 8 students through the US college application process</li>
+                            <li>Made weekly appointment with each student for checking progress, giving application strategy and reviewing essays</li>
+                            <li>Consulted parents and students to make school list and prepare financial documents</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="position">
+                    <div class="job-title">
+                        <p>Student Care</p>
+                        <p class = "job-date">August 2021 - May 2022</p>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Coordinated 23 students about IELTS, SAT and ACT learning stategy</li>
+                            <li>Updated grades weekly, delivered lecture contents, and gave advice for students to improve</li>
+                            <li>Did 100+ one-on-one appointments for students to consult about choosing major, extracurricular activities, and study abroad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+    
+        <!-- <div class= "body-div" id="certificate">
+            <h2 class = "intro-title">Certificate</h2>
+        </div>
+        <div class= "body-div" id="other">
+            <h2 class = "intro-title">Other</h2>
+        </div> -->
+    </main>
+    <!-- Below is the footer -->
+    <div class="footer-container">
+        <footer>
+            <div class = "footer-heading footer-1">
+                <h2>My projects</h2>
+                <a href="#">Photography</a>
+                <a href="#">Video Essay</a>
+                <a href="#">Projects</a>
+            </div>
+            <div class = "footer-heading footer-2">
+                <h2>Get In Touch</h2>
+                <a href="#">Contact</a>
+                <a href="#">Support</a>
+                <a href="#">Anything else</a>
+            </div>
+            <div class = "footer-heading footer-3">
+                <h2>Social Media</h2>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+    
+        </footer>
+    </div>
+</body>
+</html>
