@@ -6,58 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "author" content = "Viet Tran">
     <meta name = "description" content = "HTML lab 2">
-    <title>Introduce myself</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href = "style.css">
+    <title>Homepage</title>
+    
 </head>
 <body>
     <header>
-            <div class="logo">
-                <a href = "index.html" title= "this link leads to my works">VIET TRAN</a>
-            </div>
-            <div class="nav-bar">
-                <!-- One button link to myworks page -->
-                <button onclick = "window.location.href = 'myworks.html'">My works!</button>
-                <!-- One button to link to contact page -->
-                <button onclick="window.location.href = 'contact.html'">Let's talk!</button>
-            </div>
+        <a href="index.html" class = "logo">
+            <img src = "image/LOGO/LOGO.svg" alt = "My logo">
+        </a>
+        <nav class = "navbar">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="myworks.html">Works</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
     <!-- Above is the header -->
     <!-- Below is the main section -->
     <main>
-        <div class="content">
-            <div class="content-img">
-                <img src = "image/profilepic.png" height="400" title="my profile picture" alt = "This is my picture!">
-            </div>
-            <div class="content-text">
-                <h1>Viet Tran</h1>
-                <p>I'm a junior at Duke Kunshan University/Duke University, majoring in Computation and Design with a Digital Media track. I am an explorer who enjoys experimenting and challenging my understanding. This portfolio is just a mockup version!</p>
-                <!-- One button to scroll down to my information -->
-                <button onclick="window.location.href = 'aboutme.html';">About me</button>
-            </div>
+        <div class = "index-content">
+            <img id = "index-image" src = "image/Photography/Digital/Homepage Image.JPG" alt = "photo of my homepage">
+            <h1 id = "index-text">I'm Viet Tran</h1>
+            <img id = "overlay-image" src = "image/Photography/Digital/Overlay Homepage Image.png" alt = "photo of my homepage">
+            <button id="index-button" onclick = "window.location.href = 'myworks.html' ">
+                <img src = "image/index-page/arrow-line.svg">
+                <p>My works</p>
+            </button>
         </div>
     </main>
-    <div class="footer-container">
-        <footer>
-            <div class = "footer-heading footer-1">
-                <h2>My projects</h2>
-                <a href="#">Photography</a>
-                <a href="#">Video Essay</a>
-                <a href="#">Projects</a>
+    <footer>
+        <div class="footer-container">
+            <p>Viet Tran</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/viettran23/" target="_blank"><i class = "fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/vietran.23" target="_blank"><i class = "fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/v_iet.tra_n/" target="_blank"><i class = "fa-brands fa-instagram"></i></a>
             </div>
-            <div class = "footer-heading footer-2">
-                <h2>Get In Touch</h2>
-                <a href="#">Contact</a>
-                <a href="#">Support</a>
-                <a href="#">Anything else</a>
+            <div class="footer-nav">
+                <a href="visitar.html">VisitAR</a>
+                <a href="green-gourmet.html">Green Gourmet</a>
+                <a href="urbanized-loneliness.html">Urbanized Loneliness</a>
+                <a href="video-essay.html">Video Essay</a>
             </div>
-            <div class = "footer-heading footer-3">
-                <h2>Social Media</h2>
-                <a href="#">LinkedIn</a>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
+            <div class="line"></div>
+            <div class="copyright">
+               <p>&copy;2023 Viet Tran. All rights reserved.</p>
             </div>
-    
-        </footer>
-    </div>
+       </div>
+    </footer>
 </body>
 </html>

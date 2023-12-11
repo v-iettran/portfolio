@@ -1,589 +1,618 @@
 @font-face {
-    font-family: Montserrat-Regular;
-    src: url(font/Montserrat-Regular.ttf);
+    font-family: Josefin Sans;
+    src: url(font/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
 }
 @font-face {
-    font-family: Montserrat-Bold;
-    src: url(font/Montserrat-Bold.ttf);
-}
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: sticky;
-    top:0vh;
-    height: 10vh;
-    background-color: black;
-    z-index: 1000;
-}
-
-.logo {
-    flex: 1;
-    padding-left: 5vw;
-    font-family: Montserrat-Bold;
-}
-.logo a {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-
-.nav-bar {
-    flex: 1;
-    text-align: right;
-    padding-right: 5vw;
-}
-.nav-bar button {
-    background-color: none;
-    color: #CCCCCC;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: solid #CCCCCC;
-    font-family: Montserrat-Bold;
-    transition: 0.2s ease-in;
-}
-
-.nav-bar button:hover{
-    background-color: #CCCCCC;
-    color: black;
-    border: none;
-    border-radius: 10px;
+    font-family: Lora;
+    src: url(font/Lora/Lora-VariableFont_wght.ttf)
 }
 
 
-
-
-/* Above is the stylesheet for the header */
-
-/* Below is the stylesheet for the footer */
-*{
+* {
+    background-color: #F9F6EE;
+    font-family: 'Lora', Times, serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.footer-container {
-    background-color: #7B7A7B;
-    padding-bottom: 4rem;
-}
 
-footer {
-    width: 80%;
-    height: 40vh;
-    background-color: #7B7A7B;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
-.footer-heading {
-    display: flex;
-    flex-direction: column;
-    margin: 4rem; 
-}
-
-.footer-heading h2{
-    margin-bottom: 2rem;
-}
-
-.footer-heading a {
-    color: white;
-    text-decoration:  none;
-    margin-bottom: 0.5rem;
-}
-
-.footer-heading a:hover {
-    color: black;
-    transition: 0.2s ease-in;
-}
-
-/* Above is the stylesheet for the footer */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 main {
     flex-grow: 1;
 }
 html, button {
     font-family: 'Montserrat-Regular';
-    background-color: black;
-    color: #CCCCCC;
 }
 
-/* Below is the style for the index page */
+/* Below is the stylesheet for the header */
 
-.content {
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #F9F6EE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    font-family: 'Josefin Sans';
+    color: #333333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav a {
+    position: relative;
+    font-size: 18px;
+    color: #333333;
+    font-family: 'Josefin Sans';
+    font-weight:normal;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: 0.3s ease-out;
+}
+nav a:hover {
+    color: #3498DB;
+}
+
+nav a::before {
+    content: '';
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3498DB;
+    transition: 0.3s ease-out;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* Above is the stylesheet for the header */
+
+/* Below is the stylesheet for the footer */
+
+.footer-container {
+    width: 100%;
+    margin-top: 40px;
+    padding: 30px 30px 30px 30px;
+    border-top: solid 0.5px #333333;
+}
+
+
+.footer-container p {
+    font-family: 'Josefin Sans';
+    color: #333333;
+    font-size: 4em;
+    text-align: center;
+    margin: 0 0 20px;
+}
+.social-media {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 60%;
-    padding-bottom: 60px;
+}
+
+.social-media a {
+    text-decoration: none;
+    margin: 10px;
+    opacity: 0.9;
+}
+
+.social-media a i{
+    background-color: transparent;
+    font-size: 2em;
+    color: #333333;
+    transition: 0.3s ease-out;
+}
+
+.social-media a:hover i{
+    color: #3498DB;
+}
+
+.footer-nav {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav a {
+    color: #333333;
+    margin: 20px;
+    text-decoration: none;
+    font-family: 'Josefin Sans';
+    font-size: 1.2em;
+    opacity: 0.9;
+    transition: 0.3s ease-out;
+}
+
+.footer-nav a:hover {
+    color: #3498DB;
+}
+
+.line {
+    height: 0.5px;
+    background-color: #333333;
+    margin: 0px 100px 0px 100px;
+}
+.copyright {
+    padding: 30px 0 0 0;
+    text-align: center;
+    font-family: 'Josefin Sans';
+}
+
+.copyright p {
+    font-family: 'Josefin Sans';
+    font-weight: 'Regular';
+    font-size: 0.9em;
+}
+
+/* Above is the stylesheet for the footer */
+
+/* Below is the style for the index page */
+.index-content {
+    display: flex;
+    justify-items: center;
     align-items: center;
+    position: relative;
+    flex-direction: column;
+    padding: 30px 0 100px;
+}
+#index-img, #overlay-image{ 
+    position: relative;
+    top: 50%;
+    max-width: 500px;
 }
 
-.content-img {
-    flex: 1;
-    margin: 20px;
-}
-.content-text {
-    flex: 1;
-    margin: 20px;
-}
-.content h1 {
-    padding-bottom: 20px;
-    font-size: 300%;
-}
-.content p {
-    padding-bottom: 30px;
+#index-image {
+    width: 400px;
 }
 
-.content button {
-    width: 100px;
-    height: 100px;
+#overlay-image  {
+    width: 153px;
+    position: absolute;
+    top: 14.5%;
+    left: 47vw;
+    background-color: transparent;
+
+}
+
+#index-text {
+    position: absolute;
+    top: 30vh;
+    font-family: 'Josefin Sans';
+    font-weight: 100;
+    font-size: 150px;
+    color: transparent;
+    background-color: transparent;
+    background-image: linear-gradient(to right,  #333333, #F9F6EE, #333333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: animatedText 5s infinite alternate-reverse;
+}
+
+@keyframes animatedText {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
+}
+
+#index-button {
+    width: 150px;
+    height: 150px;
+    border: solid black 1px;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
     border-radius: 50%;
-    background-color: none;
-    color: #CCCCCC;
-    border: solid #CCCCCC;
-    transition-duration: 0.2s;
-    font-family: Montserrat-Bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease; 
 }
 
-.content button:hover{
-    background-color: #CCCCCC;
-    color: black;
-    border: none;
-    border-radius: 50%;
+#index-button:hover {
+    background-color: #3498DB;
+    border: #3498DB;
+    display: flex;
 }
+
+#index-button img {
+    margin: auto;
+    width: 50px;
+    background-color: transparent;
+}
+
+#index-button p {
+    display: none;
+}
+
+#index-button:hover img {
+    display: none;
+}
+
+#index-button:hover p {
+    display: block;
+    font-size: 20px;
+    background-color: transparent;
+    font-family: 'Josefin Sans';
+    font-weight: 'Regular';
+    color: #F9F6EE;
+}
+
+
+
+
+
+
+
 
 /* Above is the style for the index page */
 /* Below is the style for the about me page */
-
-.navbar-aboutme{
-    text-align: center;
-}
-
-.button-container {
+.about-me-container {
+    margin: 30px;
     display: flex;
-    justify-content: center;
-}
-
-.button-container button {
-    margin: 20px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: none;
-    color: #CCCCCC;
-    border: solid #CCCCCC;
-    transition-duration: 0.2s;
-    font-family: Montserrat-Bold;
-}
-
-.button-container button:hover{
-    background-color: #CCCCCC;
-    color: black;
-    border: none;
-    border-radius: 50%;
-}
-
-.body-div {
-    margin: auto;
-}
-
-.body-div h1 {
-    text-align: center;
-    padding: 20px;
-    padding-bottom: 20px;
-}
-
-.university-info {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    
-}
-.university {
-    padding: 3%;
-    flex: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    margin: 10px 10px;
-    background-color: white;
-    color: black;
-    padding: 10px;
-    box-shadow: 5px 5px 10px 2px white;
-    border-radius: 10px;
 }
 
-.dku, .duke {
-    flex: 1;
-    width: 80%;
+.profile-photo {
+    width: 20vw;
+    height: 80vh;
+    margin-left: 10vw;
 }
 
-.dku img, .duke img{
-    padding-bottom: 20px;
+.profile-photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-.degree {
-    font-size: large;
-    font-weight: bolder;
+.profile-description {
+    width: 40vw;
 }
 
-.intro-title {
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    color: white;
-    padding: 5px;
-    width: fit-content;
+.profile-description h1 {
+    font-size: 100px;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    color: #333333;
 }
 
-.job {
-    text-align: center;
-    font-weight: bolder;
-    padding: 10px;
+.profile-description p {
+    line-height: 1.5;
+    font-size: 24px;
+    padding: 30px 0 0 0;
 }
 
-.job-positions {
-    display: flex;
-    width: 80%;   
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
+#resume-button {
+    color: #333333;
+    padding: 10px 20px;
+    width: 100%;
+    border: #333333 solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 20px;
+    margin-top: 50px;
 }
 
-.position {
-    flex: 1;
-    margin: 10px 10px;
-    background-color: #7B7A7B;
-    color: white;
-    padding: 10px;
-    box-shadow: 5px 5px 10px 2px white;
-    border-radius: 10px;
+#resume-button:hover {
+    background-color: #3498DB;
+    border: #3498DB solid;
+    color:#F9F6EE;
 }
-.job-title {
-    text-align: center;
-    font-style: italic;
-    font-family: Montserrat-Bold;
-}
-
-.job-date {
-    font-style: normal;
-    font-family: Montserrat-Regular;
-    font-size: small;
-    padding: 10px
-}
-ul, ol {
-    padding-left: 20px;
-}
-
-
 
 /* Above is the style for the about me page */
 
 /* Below is the style for my works page */
-.myworks {
+
+.my-works { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.my-works h1 {
+    font-family: 'Josefin Sans';
+    font-size: 100px;
+    font-weight: 400;
+    padding: 40px;
+    color: #333333;
+}
+
+.grid-container {
     display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    max-height: 90vh;
-    border: #7B7A7B solid;
-    border-radius: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    width: 80vw;
+    height: 60vh;
+    margin-bottom: 40px;
 }
 
-
-#bio {
-    grid-area: 1/1/2/2;
-    height: fit-content;
-}
-
-#work-display {
-    grid-area: 1/2/3/3;
-    border-left: dashed;
+.project {
     text-align: center;
-    overflow: scroll;
-}
-
-.grid-item {
-    padding: 10px;
-}
-
-#bio {
-    border-bottom: solid;
-    border-width: 0.5px;
-}
-.mywork-navbar {
-    display: flex;
-    align-items: center;
-}
-
-#logo {
-    text-decoration: none;
-    color: #CCCCCC;
-    font-family: Montserrat-Bold;
-    padding-right: 20px;
-    border-right: solid;
-}
-
-.dropdown-project{
-    display:inline-block;
-    padding-left: 20px;
-}
-
-.dropdown-project button {
-    border: none;
-    border-radius: 10px;
-    background-color: #CCCCCC;
-    color: black;
-    font-family: Montserrat-Bold;
-    cursor: pointer;
-    padding: 5px 10px;
-    transition: 0.5s ease-out;
-}
-
-.dropdown-project a{
-    text-decoration: none;
-    color: black;
-    display: block;
-}
-.project-content {
-    position: absolute; 
-    display: none;
-    background-color: #CCCCCC;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-.dropdown-project:hover .project-content {
-    position: absolute; 
-    display: block;
-    background-color: #CCCCCC;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-.dropdown-project:hover button{
-    background-color: black;
-    color: #CCCCCC;
-}
-
-.dropdown-project a:hover{
-    transition: 1s ease-in;
-    font-family: Montserrat-Bold;
-}
-
-.mywork-title {
-    margin: 30px 0 30px 0;
-    font-family: Montserrat-Bold;
-}
-
-.mywork-description p{
-    margin: 20px 0 20px 0;
-}
-
-/* Below is the style sheet for footer for work */
-#footer-for-work {
-    position: relative;
-    padding: 0;
-}
-.footerForWork-navbar {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.footerForWork-navbar button {
     background-color: transparent;
-    color: #CCCCCC;
-    padding: 10px 20px;
     border-radius: 10px;
-    border: solid #CCCCCC;
-    font-family: Montserrat-Bold;
-    transition: 0.2s ease-in;
-    font-size: 60%;
-}
-
-.footerForWork-navbar button:hover {
-    background-color: #CCCCCC;
-    color: black;
-    border-radius: 10px;
-}
-
-/* Below is the work display style sheet */
-
-.photography, .video-essay, .greenGourmet {
-    flex: 1;
-    width: 50vw;
-    height: 40vh;
-    border: solid #CCCCCC;
-    margin: 0 auto 5vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    /* Below is to align the child div to center */
-    color: white;
-    border-radius: 20px;
-    font-family: Montserrat-Bold;
-    font-size: 2vw;
-    display: inline-block;
     position: relative;
-    z-index: 500;
+    cursor: pointer;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
 }
 
-.photography {
-    background-image: url(image/Kodak\ Vision\ 2\ 500T/000011.JPG);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#visitar {
+    background-image: url(image/VisitAR/VisitAR.png);
 }
 
-.video-essay {
-    background-image: url(gif/video-background.gif);
+#green-gourmet {
+    background-image: url(image/Green\ Gourmet/Logo.png);
+    background-position: center;
 }
 
-.video-essay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#photo-essay {
+    background-image: url(image/Photo\ Essays/tree1.jpg);
 }
 
-.greenGourmet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#video-essay {
+    background-image: url(video-essay/video-background.gif);
 }
 
-.work-description {
-    border-radius: 20px;
+#coming-soon {
+    border: #333333 solid;
+}
+
+.project-title {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50vw;
-    height: 40vh;
-    font-family: Montserrat-Regular;
-    font-size: medium;
-    background-color: black;
-    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: opacity 0.3s ease;
+    background-color: transparent;
 }
 
-.work-description:hover {
-    transition: 0.3s ease-in-out;
-    border-radius: 20px;
+.project-description {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50vw;
-    height: 40vh;
-    font-family: Montserrat-Regular;
-    font-size: medium;
-    border: solid #CCCCCC;
-    opacity: 1;
-    padding: 20px;
+    background-color: #333333;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #CCCCCC;
-    box-shadow: 0px 10px 5px #CCCCCC;
-}
-
-.work-description button {
-    margin: 2vh;
-    background-color: none;
-    color: #CCCCCC;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: solid #CCCCCC;
-    transition-duration: 0.2s;
-    font-family: Montserrat-Bold;
-}
-
-.work-description button:hover{
-    background-color: #CCCCCC;
-    color: black;
-    border: none;
-    border-radius: 10px;
-}
-
-
-
-
-
-
-
-
-/* Above is the style for my works page */
-/* Below is the style for contact page */
-#talk-panel {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-}
-.contact-form{
-    margin: auto;
-    background-color: #7B7A7B;
-    color: white;
-    width: 40%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px 2px white;
-}
-.contact-form h1 {
-    padding-bottom: 20px;
-    font-family: Montserrat-Bold;
-}
-label {
-    text-align: left;
-    font-weight: bold;
-}
-.choice, input, textarea {
-    float: right;
-    font-weight: normal;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 30px;
 }
 
-textarea {
-    height: 100px;
+.project-description p {
+    background-color: transparent;
+    color: #F9F6EE;
+    margin-top: 5px;
 }
 
-#yourname, #phone, #email, #note {
-    width: 40%;
+.project-description button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #F9F6EE;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 18px;
+    transition: ease 0.3s;
 }
 
-.center {
+.project-description button:hover {
+    background-color: #3498DB;
+    text-decoration: none;
+}
+
+.project:hover .project-title {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover .project-description {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.1);
+}
+
+
+.project-title h2 {
+    background-color: transparent;
+    font-family: 'Josefin Sans';
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 30px;
+    color: #F9F6EE;
+}
+
+#coming-soon h2 {
+    color: #333333;
+}
+
+/*VisitAR */
+
+.overlay-heading{
+    width: 100vw;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.submit-button{
-    background-color: #7B7A7B;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: solid white;
-    transition-duration: 0.2s;
-    font-family: Montserrat-Bold;
+.overlay-heading h2 {
+    background-color: transparent;
+    font-family: 'Josefin Sans';
+    font-size: 100px;
+    color: #F9F6EE;
 }
 
-.submit-button:hover{
-    background-color: white;
-    color: black;
-    border-radius: 100px;
+#visitar-heading {
+    background-image: url(image/VisitAR/VisitAR.png);
+}
+
+#green-gourmet-heading {
+    background-image: url(image/Green\ Gourmet/Logo.png);
+}
+
+#urbanized-loneliness-heading {
+    background-image: url(image/Photo\ Essays/tree1.jpg);
+}
+
+#video-essay-heading {
+    background-image: url(video-essay/video-background.gif);
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-content p {
+    padding: 30px 0 0 0;
+    font-size: 24px;
+    line-height: 1.5;
+    width: 50vw;
+}
+.overlay-content img {
+    padding: 30px 0 0 0;
+    width: 50vw;
+}
+
+
+/* Above is the style for my works page */
+
+/* Below is the style for contact page */
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.contact-image {
+    border-right: solid #333333 0.5px;
+    padding-right: 5vw;
+}
+.contact-image img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+.contact-box {
+    width: 600px;
+    height: 600px;
+    padding-left: 5vw;
+}
+
+.contact-box h1 {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: transparent;
+    color: #333333;
+    padding: 10px 20px;
+    width: 100%;
+    border: #333333 solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #3498DB;
+    border: #3498DB solid;
+    color:#F9F6EE;
+}
+
+.contact-info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info a {
+    color: #333333;
+}
+
+.contact-info a:hover {
+    color: #3498DB;
+}
+
+.contact-info a:visited {
+    color: #333333;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
 }
 
 /* Above is the style for contact page */
