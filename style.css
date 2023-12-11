@@ -86,6 +86,43 @@ nav a:hover::before {
     width: 100%;
 }
 
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hide the hamburger menu by default on larger screens */
+}
+
+/* Adjust the media query to include styles for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #F9F6EE;
+        display: none;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu on smaller screens */
+    }
+}
+
+
 /* Above is the stylesheet for the header */
 
 /* Below is the stylesheet for the footer */
@@ -177,21 +214,21 @@ nav a:hover::before {
 }
 #index-img, #overlay-image{ 
     position: relative;
-    top: 50%;
-    max-width: 500px;
 }
 
 #index-image {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 
-#overlay-image  {
-    width: 153px;
+#overlay-image {
+    width: 100%;
+    max-width: 153px;
     position: absolute;
     top: 14.5%;
-    left: 47vw;
+    left: 50%;
+    transform: translateX(-31%);
     background-color: transparent;
-
 }
 
 #index-text {
@@ -199,7 +236,7 @@ nav a:hover::before {
     top: 30vh;
     font-family: 'Josefin Sans';
     font-weight: 100;
-    font-size: 150px;
+    font-size: 10vw;
     color: transparent;
     background-color: transparent;
     background-image: linear-gradient(to right,  #333333, #F9F6EE, #333333);
@@ -223,8 +260,8 @@ nav a:hover::before {
     height: 150px;
     border: solid black 1px;
     position: absolute;
-    right: 100px;
-    bottom: 100px;
+    right: 5%;
+    bottom: 12%;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -263,7 +300,11 @@ nav a:hover::before {
     color: #F9F6EE;
 }
 
-
+@media screen and (max-width: 768px) {
+    #index-text {
+        font-size: 6vw; /* Adjust font size for smaller screens */
+    }
+}
 
 
 

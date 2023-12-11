@@ -22,6 +22,7 @@
             <a href="myworks.html">Works</a>
             <a href="contact.html">Contact</a>
         </nav>
+        <button class="hamburger-menu" onclick="toggleNav()">☰</button>
     </header>
     <!-- Above is the header -->
     <!-- Below is the main section -->
@@ -56,5 +57,11 @@
             </div>
        </div>
     </footer>
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('.navbar');
+            nav.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
