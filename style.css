@@ -535,8 +535,9 @@ nav a:hover::before {
 .overlay-heading h2 {
     background-color: transparent;
     font-family: 'Josefin Sans';
-    font-size: 10vw;
+    font-size: 7vw;
     color: #F9F6EE;
+    white-space: nowrap;
 }
 
 #visitar-heading {
