@@ -607,6 +607,7 @@ nav a:hover::before {
 
 .contact-box h1 {
     font-family: 'Josefin Sans';
+    color: #333333;
     font-weight: 400;
     font-size: 70px;
     margin-bottom: 30px;
