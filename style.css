@@ -235,7 +235,7 @@ nav a:hover::before {
     position: absolute;
     top: 30vh;
     font-family: 'Josefin Sans';
-    font-weight: 100;
+    font-weight: 400;
     font-size: 10vw;
     color: transparent;
     background-color: transparent;
@@ -256,8 +256,9 @@ nav a:hover::before {
 }
 
 #index-button {
-    width: 150px;
-    height: 150px;
+    width: 8vw;
+    height: 8vw;
+    background-color: transparent;
     border: solid black 1px;
     position: absolute;
     right: 5%;
@@ -279,7 +280,7 @@ nav a:hover::before {
 
 #index-button img {
     margin: auto;
-    width: 50px;
+    width: 3vw;
     background-color: transparent;
 }
 
@@ -293,7 +294,7 @@ nav a:hover::before {
 
 #index-button:hover p {
     display: block;
-    font-size: 20px;
+    font-size: 1.3vw;
     background-color: transparent;
     font-family: 'Josefin Sans';
     font-weight: 'Regular';
